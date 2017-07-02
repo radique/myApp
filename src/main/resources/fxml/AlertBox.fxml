@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: SNOW;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="60.0" prefHeight="200.0" prefWidth="500.0" style="-fx-background-color: #41464C;">
+         <children>
+            <JFXTextArea fx:id="msgField" editable="false" focusColor="SNOW" layoutX="94.0" layoutY="84.0" prefHeight="33.0" prefWidth="312.0" promptText="test" style="-fx-text-fill: SNOW; -fx-text-alignment: center;" unFocusColor="SNOW" wrapText="true" />
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane prefHeight="60.0" prefWidth="500.0" style="-fx-background-color: #2C3033;">
+         <children>
+            <FontAwesomeIcon fx:id="closeButton" fill="#dd4d4d" iconName="CLOSE" layoutX="462.0" layoutY="40.0" onMouseClicked="#close" size="2.5em" text="">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIcon>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutY="240.0" prefHeight="60.0" prefWidth="500.0" style="-fx-background-color: #2C3033;">
+         <children>
+            <JFXButton fx:id="okayButton" buttonType="RAISED" layoutX="400.0" layoutY="15.0" onAction="#okayButtonClicked" prefHeight="27.0" prefWidth="86.0" ripplerFill="WHITE" style="-fx-background-color: #4F5254;" text="Okay" textFill="#fffbfb">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+   <effect>
+      <DropShadow blurType="GAUSSIAN" />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.testapps.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="700.0" style="-fx-background-color: #3E3F42;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StartWindow">
+   <children>
+      <Pane layoutX="8.0" layoutY="59.0" prefHeight="360.0" prefWidth="684.0" style="-fx-background-color: #3E3F42;">
+         <children>
+            <JFXTextField fx:id="usr_name" focusColor="WHITE" labelFloat="true" layoutX="231.0" layoutY="90.0" prefHeight="40.0" prefWidth="263.0" promptText="Username" style="-fx-text-fill: SNOW;" unFocusColor="#4c4c4c">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXTextField>
+            <JFXPasswordField fx:id="password" focusColor="WHITE" labelFloat="true" layoutX="231.0" layoutY="171.0" prefHeight="40.0" prefWidth="263.0" promptText="Password" style="-fx-text-fill: SNOW;" unFocusColor="#4c4c4c">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXPasswordField>
+            <JFXButton fx:id="log_btn" buttonType="RAISED" layoutX="408.0" layoutY="241.0" onAction="#loginButton" prefHeight="25.0" prefWidth="86.0" ripplerFill="WHITE" style="-fx-background-color: #4F5254;" text="Log in" textFill="#fffbfb">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font></JFXButton>
+            <Label layoutX="192.0" layoutY="246.0" text="Don't have account? " textFill="#fff8f8">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="reg_label" layoutX="326.0" layoutY="246.0" onMouseClicked="#registerButton" prefHeight="17.0" prefWidth="73.0" text="Click here" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <FontAwesomeIcon fill="#737477" iconName="USER" layoutX="190.0" layoutY="120.0" size="2.5em" />
+            <FontAwesomeIcon fill="#737477" iconName="LOCK" layoutX="192.0" layoutY="201.0" size="2.5em" />
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </Pane>
+      <Pane layoutY="-1.0" prefHeight="54.0" prefWidth="700.0" style="-fx-background-color: #3E3F42;">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons/open-book2.png" />
+               </image>
+            </ImageView>
+            <FontAwesomeIcon fx:id="miniButton" fill="#737477" iconName="MINUS" layoutX="616.0" layoutY="41.0" onMouseClicked="#minimize" size="2.5em" text="">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIcon>
+            <FontAwesomeIcon fx:id="closeButton" fill="#dd4d4d" iconName="CLOSE" layoutX="662.0" layoutY="40.0" onMouseClicked="#close" size="2.5em">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIcon>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </Pane>
+      <Pane layoutX="8.0" layoutY="425.0" prefHeight="46.0" prefWidth="684.0" style="-fx-background-color: #3E3F42;">
+         <children>
+            <Label layoutX="198.0" layoutY="8.0" prefHeight="30.0" prefWidth="289.0" text="Some trademarks stuff and Git Hub link" textFill="#fff8f8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" iconName="GITHUB" layoutX="506.0" layoutY="33.0" size="2.5em">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIcon>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

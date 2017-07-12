@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="myApp.jnlp">
+  <information>
+    <title>myApp</title>
+    <vendor>Unknown</vendor>
+    <description>myApp</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="libs\aopalliance-1.0.jar" size="4467" download="eager" />
+    <jar href="libs\attoparser-2.0.4.RELEASE.jar" size="232901" download="eager" />
+    <jar href="libs\controlsfx-8.40.12.jar" size="996389" download="eager" />
+    <jar href="libs\fontawesomefx-8.1.jar" size="179086" download="eager" />
+    <jar href="libs\javassist-3.20.0-GA.jar" size="750581" download="eager" />
+    <jar href="libs\jfoenix-1.4.0.jar" size="2363143" download="eager" />
+    <jar href="libs\jna-4.3.0.jar" size="945524" download="eager" />
+    <jar href="libs\jna-platform-4.3.0.jar" size="2280953" download="eager" />
+    <jar href="libs\mysql-connector-java-5.1.31.jar" size="964879" download="eager" />
+    <jar href="libs\ognl-3.1.12.jar" size="235656" download="eager" />
+    <jar href="libs\slf4j-api-1.6.6.jar" size="26176" download="eager" />
+    <jar href="libs\spring-aop-4.1.6.RELEASE.jar" size="359014" download="eager" />
+    <jar href="libs\spring-beans-4.1.6.RELEASE.jar" size="708371" download="eager" />
+    <jar href="libs\spring-context-4.1.6.RELEASE.jar" size="1026330" download="eager" />
+    <jar href="libs\spring-core-4.1.6.RELEASE.jar" size="1007922" download="eager" />
+    <jar href="libs\spring-expression-4.1.6.RELEASE.jar" size="259014" download="eager" />
+    <jar href="libs\spring-jdbc-4.1.6.RELEASE.jar" size="426669" download="eager" />
+    <jar href="libs\spring-security-acl-4.0.0.RELEASE.jar" size="82736" download="eager" />
+    <jar href="libs\spring-security-config-4.0.0.RELEASE.jar" size="472012" download="eager" />
+    <jar href="libs\spring-security-core-4.0.0.RELEASE.jar" size="354567" download="eager" />
+    <jar href="libs\spring-security-web-4.0.0.RELEASE.jar" size="321695" download="eager" />
+    <jar href="libs\spring-tx-4.1.6.RELEASE.jar" size="252550" download="eager" />
+    <jar href="libs\spring-web-4.1.6.RELEASE.jar" size="718705" download="eager" />
+    <jar href="libs\thymeleaf-3.0.6.RELEASE.jar" size="863479" download="eager" />
+    <jar href="libs\thymeleaf-extras-springsecurity4-3.0.2.RELEASE.jar" size="39159" download="eager" />
+    <jar href="libs\unbescape-1.1.4.RELEASE.jar" size="164695" download="eager" />
+    <jar href="myApp.jar" size="2457230" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="controller.StartWindow"  name="myApp" />
+  <update check="background"/>
+</jnlp>

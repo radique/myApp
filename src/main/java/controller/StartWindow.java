@@ -28,7 +28,7 @@ public class StartWindow extends Application{
     private static final int COUNT_LIMIT = 50000;
 
     public static void main(String[] args) {
-        //Временная заглушка для loader`a
+        //Временная заглушка для loader
         LauncherImpl.launchApplication(StartWindow.class, MyPreloader.class, args);
     }
     @Override

@@ -76,7 +76,7 @@ public class RegisterModel {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            new HelperController().notificationHelper("Ошибка БД","При выполнении sql запроса произошла ошибка", 5);
+            new HelperController().notificationHelper("Ошибка БД", "При выполнении sql запроса произошла ошибка", 5);
         }
         return null;
     }

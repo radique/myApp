@@ -25,9 +25,10 @@ public class StartWindow extends Application{
     private de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon miniButton;
     @FXML
     private de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon closeButton;
-    private static final int COUNT_LIMIT = 500000;
+    private static final int COUNT_LIMIT = 50000;
 
     public static void main(String[] args) {
+        //Временная заглушка для loader`a
         LauncherImpl.launchApplication(StartWindow.class, MyPreloader.class, args);
     }
     @Override

@@ -11,10 +11,12 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import model.RegisterModel;
 import model.StartWindowModel;
 
 
 public class RegisterWindowController {
+    //TODO добавить валидацию и отображение ошибок + регикс
     @FXML
     private de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon miniButton;
     @FXML
@@ -62,6 +64,10 @@ public class RegisterWindowController {
         System.exit(1);
     }
 
+    void RegisterUser(String email, String pass, String conf_pass, String name, String sur_name) {
+        System.out.println(email+pass+conf_pass+name+sur_name);
+    }
+
     @FXML
     public void handleButtonAction(ActionEvent event) {
         JFXButton btn = (JFXButton) event.getSource();
@@ -73,7 +79,14 @@ public class RegisterWindowController {
                 first_pane.toFront();
                 break;
             case "compete_btn":
-                System.out.println("done");
+                if (pass_reg.getText().equals(pass_reg_confirm.getText())) {
+                    RegisterModel.registration(
+                            email.getText(),
+                            pass_reg.getText(),
+                            first_name.getText(),
+                            second_name.getText()
+                    );
+                }
                 break;
             case "back_login":
                 Stage stage = (Stage) back_login.getScene().getWindow();

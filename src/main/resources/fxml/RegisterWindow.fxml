@@ -56,25 +56,19 @@
       </Pane>
       <Pane fx:id="second_pane" layoutX="7.0" layoutY="60.0" prefHeight="360.0" prefWidth="684.0" style="-fx-background-color: #3E3F42;">
          <children>
-            <JFXButton fx:id="compete_btn" buttonType="RAISED" layoutX="375.0" layoutY="298.0" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="99.0" ripplerFill="WHITE" style="-fx-background-color: #4F5254;" text="Done" textFill="#fffbfb">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </JFXButton>
+            <FontAwesomeIcon fill="SNOW" iconName="USER" layoutX="319.0" layoutY="86.0" size="5em" />
             <JFXTextField fx:id="first_name" focusColor="WHITE" labelFloat="true" layoutX="211.0" layoutY="131.0" prefHeight="32.0" prefWidth="263.0" promptText="Name" style="-fx-text-fill: SNOW;" unFocusColor="#4c4c4c">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXTextField>
-            <FontAwesomeIcon fill="SNOW" iconName="USER" layoutX="319.0" layoutY="86.0" size="5em" />
             <JFXTextField fx:id="second_name" focusColor="WHITE" labelFloat="true" layoutX="211.0" layoutY="207.0" prefHeight="32.0" prefWidth="263.0" promptText="Surname" style="-fx-text-fill: SNOW;" unFocusColor="#4c4c4c">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXTextField>
+            <FontAwesomeIcon fill="SNOW" iconName="ANGLE_LEFT" layoutX="230.0" layoutY="323.0" size="2.5em" />
+            <FontAwesomeIcon fill="SNOW" iconName="CHECK" layoutX="445.0" layoutY="320.0" size="1.5em" text="" />
             <JFXButton fx:id="back_btn" buttonType="RAISED" layoutX="211.0" layoutY="298.0" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="99.0" ripplerFill="WHITE" style="-fx-background-color: #4F5254;" text="Back" textFill="#fffbfb">
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -83,8 +77,14 @@
                   <Font size="14.0" />
                </font>
             </JFXButton>
-            <FontAwesomeIcon fill="SNOW" iconName="ANGLE_LEFT" layoutX="230.0" layoutY="323.0" size="2.5em" />
-            <FontAwesomeIcon fill="SNOW" iconName="CHECK" layoutX="445.0" layoutY="320.0" size="1.5em" text="" />
+            <JFXButton fx:id="compete_btn" buttonType="RAISED" layoutX="375.0" layoutY="298.0" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="99.0" ripplerFill="WHITE" style="-fx-background-color: #4F5254;" text="Done" textFill="#fffbfb">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
          </children>
       </Pane>
       <Pane fx:id="first_pane" layoutX="8.0" layoutY="59.0" prefHeight="360.0" prefWidth="684.0" style="-fx-background-color: #3E3F42;">
@@ -94,14 +94,6 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXTextField>
-            <JFXButton fx:id="next_btn" buttonType="RAISED" layoutX="388.0" layoutY="291.0" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="108.0" ripplerFill="WHITE" style="-fx-background-color: #4F5254;" text="Next" textFill="#fffbfb">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </JFXButton>
             <FontAwesomeIcon fill="#737477" iconName="LOCK" layoutX="194.0" layoutY="236.0" size="2.5em" />
             <FontAwesomeIcon fill="#737477" iconName="LOCK" layoutX="194.0" layoutY="170.0" size="2.5em" text="" />
             <JFXPasswordField fx:id="pass_reg" focusColor="WHITE" labelFloat="true" layoutX="232.0" layoutY="143.0" prefHeight="30.0" prefWidth="263.0" promptText="Password" style="-fx-text-fill: SNOW;" unFocusColor="#4c4c4c">
@@ -116,6 +108,14 @@
             </JFXPasswordField>
             <FontAwesomeIcon fill="#737477" iconName="ENVELOPE" layoutX="189.0" layoutY="97.0" size="2.5em" />
             <JFXButton fx:id="back_login" buttonType="RAISED" layoutX="194.0" layoutY="291.0" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="119.0" ripplerFill="WHITE" style="-fx-background-color: #4F5254;" text="Back to Log In" textFill="#fffbfb">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="next_btn" buttonType="RAISED" layoutX="388.0" layoutY="291.0" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="108.0" ripplerFill="WHITE" style="-fx-background-color: #4F5254;" text="Next" textFill="#fffbfb">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
